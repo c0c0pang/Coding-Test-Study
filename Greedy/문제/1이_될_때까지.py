@@ -9,11 +9,9 @@ while True:
         break;
     if(N%K==0):
         N = int(N/K);
-        print(N);
         count +=1;
     else:
         N -= 1;
-        print(N);
         count +=1;
     
 
