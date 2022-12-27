@@ -1,12 +1,12 @@
-# def dfs(graph,n,visited):
+def dfs(graph,n,visited):
 
-#     if not(visited[n]):
-#         visited[n] = True
-#         print(n,end=' ')
-#         for i in graph[n]:
-#             dfs(graph,i,visited)
-#     else:
-#         return
+    if not(visited[n]):
+        visited[n] = True
+        print(n,end=' ')
+        for i in graph[n]:
+            dfs(graph,i,visited)
+    else:
+        return
     
 graph = [
     [],
