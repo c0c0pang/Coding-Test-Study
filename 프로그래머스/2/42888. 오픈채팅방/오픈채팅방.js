@@ -16,10 +16,8 @@ function solution(record) {
                 idx:[...s,[idx++,state]],
                 name:name
             };
-            // answer.push(`${name}님이 들어왔습니다.`);
         }
         if(state==='Leave'){
-            // answer.push(`${obj[id]}님이 나갔습니다.`);
             s.push([idx++,state])
         }
         if(state==='Change'){
