@@ -7,14 +7,14 @@ while (array.length) {
     const value = array.pop();
     const len = array.length;
     if (value === ')') {
-        stack.push([value, len]);
+        stack.push(len);
         continue;
     }
     const p = stack.pop();
-    if (p[1] - len === 1 && stack.length > 0) {
+    if (p - len === 1 && stack.length > 0) {
         answer += (stack.length);
         continue
     };
-    if (p[1] - len !== 1) answer++;
+    if (p - len !== 1) answer++;
 }
 console.log(answer);
