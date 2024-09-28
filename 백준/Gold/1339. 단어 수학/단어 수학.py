@@ -4,7 +4,6 @@ n = int(input())
 dic = {}
 array = []
 num = 9
-d = 10;
 for i in range(n):
     arr = list(input().strip())
     array.append((len(arr),arr))
